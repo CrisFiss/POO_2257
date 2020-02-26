@@ -32,8 +32,16 @@ public class Puerta {
     public int getNumChapas() {
         return numChapas;
     }
-
+    
     public void setNumChapas(int numChapas) {
         this.numChapas = numChapas;
+    }
+    
+    public void abrir() {
+        System.out.println("Abriendo puerta ...");
+    }
+    
+    public void cerrar() {
+        System.out.println("Cerrando puerta ...");
     }
 }

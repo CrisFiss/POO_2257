@@ -71,6 +71,14 @@ public class Casa {
         this.ventana = ventana;
     }
     
+    public void limpiar() {
+        System.out.println("Limpiando casa ...");
+    }
+    
+    public void ensuciar() {
+        System.out.println("Ensuciando casa ...");
+    }
+    
     @Override
     public String toString(){
         return " :: CASA :: " +

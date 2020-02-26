@@ -36,4 +36,12 @@ public class Ventana {
     public void setMaterial(String material) {
         this.material = material;
     }
+    
+    public void abrir() {
+        System.out.println("Abriendo ventana ...");
+    }
+    
+    public void cerrar() {
+        System.out.println("Cerrando ventana ...");
+    }
 }

@@ -36,4 +36,12 @@ public class Habitacion {
     public void setLargo(float largo) {
         this.largo = largo;
     }
+    
+    public void limpiar() {
+        System.out.println("Limpiando habitación ...");
+    }
+    
+    public void ensuciar() {
+        System.out.println("Ensuciando habitación ...");
+    }
 }
