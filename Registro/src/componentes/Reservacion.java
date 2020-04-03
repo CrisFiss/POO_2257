@@ -11,10 +11,6 @@ public class Reservacion {
     private int horaDeSalida;
     private int cuenta;
     
-    public Reservacion(String huesped) {
-        this.huesped = huesped;
-    }
-    
     public Reservacion(String huesped, boolean todoIncluido, TipoHabitacion tipoDeHabitacion, TipoVista tipoDeVista, int horaDeEntrada, int horaDeSalida) {
         this.huesped = huesped;
         this.todoIncluido = todoIncluido;
@@ -109,7 +105,7 @@ public class Reservacion {
         ArrayList<Reservacion> reservaciones = new ArrayList();
         
         for (int i = 1; i <= 3; i++) {
-            reservaciones.add(new Reservacion("Huesped de prueba " + i));
+            reservaciones.add(new Reservacion("Huesped de prueba " + i, false, TipoHabitacion.sencilla, TipoVista.mar, 3, 12));
         }
         return reservaciones;
     }

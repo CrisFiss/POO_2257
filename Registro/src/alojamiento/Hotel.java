@@ -182,13 +182,11 @@ public class Hotel {
             reservaciones.add(new Reservacion(nombre, todoIncluido, habitacion, vista, horaEntrada, horaSalida));
             
             System.out.println();
-            for (int i = 0; i < reservaciones.size(); i++) {
-                System.out.println(i+1 + ". " + reservaciones.get(i).getHuesped());
-            }
-            System.out.println();
             System.out.println("La habitación ha quedado reservada.");
+            Reservacion reservacionSeleccionada = reservaciones.get(reservaciones.size()-1);
             System.out.println();
-            
+            System.out.println(reservacionSeleccionada);
+            System.out.println();
             //Regresar al menu anterior
             respuesta = 0;
             
