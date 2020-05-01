@@ -8,7 +8,7 @@ public class Ventana extends Frame {
 
     public Ventana() {
         super("Mi primer ventana AWT");
-        setSize(600, 340);
+        setSize(600, 320);
         
         addWindowListener(
             new WindowAdapter(){

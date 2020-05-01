@@ -4,6 +4,8 @@ import java.awt.Button;
 import java.awt.Frame;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Ventana2 extends Frame {
     public Ventana2(){
@@ -32,6 +34,18 @@ public class Ventana2 extends Frame {
         Button boton3 = new Button("Boton 3");
         gridbag.setConstraints(boton3, gbc);
         add(boton3);
+        
+        Button boton4 = new Button("Boton 4");
+        gridbag.setConstraints(boton4, gbc);
+        add(boton4);
+        
+        addWindowListener(
+            new WindowAdapter(){
+                public void windowClosing(WindowEvent e){
+                    System.exit(0);
+                }
+            }
+        );
     }
     
     public static void main(String[] args) {

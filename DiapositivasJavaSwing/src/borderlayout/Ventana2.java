@@ -17,7 +17,7 @@ public class Ventana2 extends Frame {
         setSize(400, 300);
         setResizable(false);
         setLayout(new BorderLayout());
-        add("Noth", btn);
+        add("North", btn);
         add("South", btn2);
         add("West", btn3);
         add("East", btn4);
